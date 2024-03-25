@@ -30,9 +30,11 @@ function App() {
       } catch (error) {
         console.error("Connect failed:", error);
         alert("Connect failed. Please enable MetaMask.");
+        return;
       }
     } else {
       alert("MetaMask is not installed. Please install MetaMask to connect your wallet.");
+      return;
     }
   }
 
@@ -47,7 +49,7 @@ function App() {
     }
     
     const config = {
-      apiKey: '6bHiywwM99LO2cjsnOf78vz13mdh0bQP',
+      apiKey: "YOUR_API_KEY",
       network: Network.ETH_MAINNET,
     };
   
